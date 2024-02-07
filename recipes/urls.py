@@ -6,6 +6,4 @@ from recipes.views import *
 
 urlpatterns = [
     path('home/', home),
-    path('sobre/', sobre),
-    path('contato/', contato)
 ]
