@@ -2,8 +2,9 @@ from django.urls import path
 
 from django.http import HttpResponse
 
-from recipes.views import *
+from . import views
 
 urlpatterns = [
-    path('', home),
+    path('', views.home),
+    path('recipes/<int:id>/', views.recipe),
 ]
